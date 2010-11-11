@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+  <head>
+    <title>Ecouter {{content.episode.title}} - Bonnes Ondes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="{{theme.url_for_assets}}/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+    <link rel="alternate" type="application/rss+xml" title="Podcast de {{content.episode.show.name}}" href="{{content.episode.show.url_for_podcast}}"/>
+  </head>
+
+  {% if content.episode.contents.size == 1 %}
+    {% assign title = content.episode.title %}
+  {% else %}
+    {% assign title = content.name %}
+  {% endif %}
+
+  <body class="content">
+    <div id="all" class="condensed">
+      <div id="header">
+        <div class="left border"></div>
+        <div class="right border"></div>
+        <h1>Ecouter {{title}}</h1>
+      </div>
+
+      <div id="view">
+        <div class="left border"></div>
+        <div class="right border"></div>
+
+        <div id="page">
+          <span class="description_image">{{content.episode.image.tag_for_thumb}}</span>
+          <div class="content_description">
+            {{ title }}
+            <br/>
+
+            {% if content.has_duration? %}
+              <span class="info">Durée : {{content.duration}} minutes</span>
+            {% endif %}
+          </div>
+
+          <div class="listen">
+            {{content.embedded_player_started}}
+            <br/>
+            ou <a href="{{content.url_for_playlist}}">écouter sur votre ordinateur</a> avec <a class="vlc" href="http://www.videolan.org/vlc/" target="_new"><img src="{{theme.url_for_assets}}/images/vlc.png"/>VLC</a>, Winamp, iTunes, etc
+          </div>
+
+          <div id="links">
+            <a href="javascript:window.close();">Fermer</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="left border"></div>
+        <div class="right border"></div>
+
+        <p>
+
+        </p>
+      </div>
+    </div>
+  </div>
+ </body>
+</html>
