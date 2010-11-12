@@ -1,5 +1,5 @@
-body { background-color:#000; font-family:Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size:13px}
-div,p { margin: 0; padding: 0;color:#FFF; }
+body { background-color:#000; font-family:Verdana,Tahoma,Arial,Helvetica,sans-serif; font-size:13px;color:#FFF;}
+div,p { margin: 0; padding: 0;}
 img { border: 0 }
 
 #all { margin: 0 auto; }
