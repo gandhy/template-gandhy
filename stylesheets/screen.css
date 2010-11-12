@@ -14,7 +14,7 @@ img { border: 0 }
 #header .left { background-image:url(../images/header_left.png); width:24px; }
 #header .right { background-image:url(../images/header_right.png); width:24px; }
 
-h1 { left: 23px; top:-2px; position: absolute; }
+h1 { left: 23px; top:-10px; position: absolute; }
 h1, h1 a { font-size:16pt; color:black; text-decoration: none; }
 
 h2 { font-size: 1.1em; }
