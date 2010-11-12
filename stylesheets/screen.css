@@ -11,7 +11,7 @@ img { border: 0 }
 .right { right: 0px; }
 .border { height:100%; position:absolute; top:0px; width:12px; }
 
-#header .left { background-image:url(../images/header_left.png); }
+#header .left { background-image:url(../images/header_left.png); width:24px; }
 #header .right { background-image:url(../images/header_right.png); width:24px; }
 
 h1 { left: 23px; top:-2px; position: absolute; }
